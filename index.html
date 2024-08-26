@@ -1,645 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Umer Iftikhar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Umer</title>
+    <meta name="author" content="Umer Iftikjar | Software Engineer | App Developer">
 
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/my-pic-2.png"/>
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="style.css" />
+    <!------------------ External CSS ------------------>
+    <link rel="stylesheet" href="style.css">
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
-
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Expertise</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
-
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Umer Iftikhar</span>
-          </h2>
-          <p class="text-muted">
-            Software Engineer | Senior Flutter Developer | AI Enthusiast | Mobile Application Developer | Backend | 20+ Apps Developed.
-          </p>
-          <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-        </button>
-        
-          <a href="" class="link ms-4 d-none">See My Work</a>
-        </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/banner-01.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- home section ends here -->
-
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
-      <div class="heading text-center">
-        <h3>
-          My Expertise
-        </h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
+    <!------------------ Box Icons ------------------>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!------------------------ Header starts from here ----------------------->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
-            <div class="content mt-3">
-              <h4>App Development</h4>
-              <p class="text-muted">
-                I specialize in mobile application development using Flutter, with a strong focus on creating seamless and responsive cross-platform apps. With over 3 years of experience, I have developed a wide range of applications, from simple utilities to complex systems, ensuring a smooth user experience across both Android and iOS devices. My expertise includes integrating APIs, managing advertisements, implementing payment gateways like Apple Pay, and enabling social authentication such as Apple Sign-In. I am also proficient in deep linking, app analytics, crashlytics, performance optimization, and app security. I am passionate about structuring projects for optimal efficiency and am always exploring the latest advancements in mobile development.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Backend</h4>
-              <p class="text-muted">
-                While my core strength lies in mobile app development, I also have experience in backend development using Node.js and Spring Boot. I've developed and deployed servers for e-commerce platforms, focusing on performance, scalability, and security. Additionally, I've created custom customer support systems to enhance user interaction and experience. My backend work includes designing RESTful APIs, managing databases, and implementing CI/CD pipelines for automated releases. I'm actively continuing to learn and grow in backend technologies, and my projects demonstrate my ability to manage complex server-side requirements.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>AI and Chatbot</h4>
-              <p class="text-muted">
-                My journey into AI and chatbot development is fueled by a desire to create intelligent systems that can interact with users in a natural, meaningful way. I am currently exploring open-source AI models like Rasa, where I have developed a custom customer support system tailored to specific client needs. This system leverages Rasa for model training and Node.js as the server, with a Flutter-based frontend. Although I am still expanding my expertise in this domain, I am excited about the possibilities AI offers and am committed to pushing the boundaries of what can be achieved with machine learning and natural language processing. My work in AI is a continuous exploration, and I look forward to contributing more to this rapidly evolving field.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- expertise section ends here -->
 
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">100%</span>
+            <div>
+                <a href="#" class="nav__logo">Umer</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
                 </div>
-                <br />
-                <span class="text">Flutter</span>
-              </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav__link active"> Home </a></li>
+                    <li class="nav__item"> <a href="#about" class="nav__link"> About </a></li>
+                    <li class="nav__item"> <a href="#skills" class="nav__link"> Skills </a></li>
+                    <li class="nav__item"> <a href="#services" class="nav__link"> Services </a></li>
+                    <li class="nav__item"> <a href="#works" class="nav__link"> Works </a></li>
+                    <li class="nav__item"> <a href="#contact" class="nav__link"> Contact </a></li>
+                </ul>
             </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">80%</span>
+        </nav>
+    </header>
+    <!------------------------ Header ends from here ----------------------->
+
+    <!------------------------ Body starts from here ----------------------->
+    <main class="l-main">
+        <!------------------- Home ------------------->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="images/my-pic-2.png" alt="Umer Iftikhar" title="Umer Iftikhar">
+                    </div>
+
+                    <h1 class="home__title">Umer Iftikhar</h1>
+                    <span class="home__profession">Software Engineer | Senior Flutter Developer | AI Enthusiast | Mobile Application Developer | Backend | 20+ Apps Developed.</span>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/umer-iftikhar-a3842122a/" target="_blank" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/umeriplex" target="_blank" class="home__social-link"><i class='bx bxl-github' ></i></a>
+                        <a href="https://web.facebook.com/umeriftikhar2526/" target="_blank" class="home__social-link"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://www.instagram.com/_ummmer/" target="_blank" class="home__social-link"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+
+                    <a download="umer-flutter-dev-resume" target="_blank" href="images/flutter-umer-resume.pdf" class="button home__button">Download Resume</a>
                 </div>
-                <br />
-                <span class="text">Native Kotlin</span>
-              </div>
             </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">50%</span>
+        </section>
+
+        <!-------------------------- About ---------------------------->
+        <section class="about section" id="about">
+
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        I’m a Flutter expert with over 3 years of experience in developing seamless cross-platform mobile apps for Android and iOS, including native app development. My expertise covers integrating APIs, managing ads, implementing payment gateways like Apple Pay, enabling social authentication, deep linking, app analytics, crashlytics, performance optimization, app security, and certificate transparency.
+                        <br>
+                        <br>
+                        I also have experience in backend development using Node.js and Spring Boot, where I’ve built and deployed servers for e-commerce platforms, designed RESTful APIs, managed databases, and implemented CI/CD pipelines.
+                        <br>
+                        <br>
+                        Additionally, I’m exploring AI and chatbot development using open-source models like Rasa, creating custom support systems with a focus on natural user interactions.
+                    </p>
+                    <img src="images/banner-01.png" alt="Umer Iftikhar" title="Umer Iftikhar" class="about__img">
                 </div>
-                <br />
-                <span class="text">Backend</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">20%</span>
+
+                <div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
+    
+                        <div class="about__information-data">
+                            <i class='bx bxs-user about__information-icon'></i>
+                            <span>Umer Iftikhar</span>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class='bx bxs-phone about__information-icon'></i>
+                            <span>+92 340 2093883</span>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class='bx bxs-envelope about__information-icon'></i>
+                            <span>umeriftikhar2526@gmail.com</span>
+                        </div>
+                    </div>
+    
+                    <div class="about__information">
+                        <h3 class="about__information-title">Experience and support</h3>
+    
+                        <div class="about__information-data">
+                            <i class='bx bxs-medal about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">3 Years Job</span>
+                                <span class="about__information-subtitle-small">Experience</span>
+                            </div>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class='bx bxs-briefcase about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">20+ Projects</span>
+                                <span class="about__information-subtitle-small">Completed</span>
+                            </div>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class='bx bx-support about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">Support</span>
+                                <span class="about__information-subtitle-small">Online 24/7</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <span class="text">AI & Chatbot</span>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>Technical Expertise</small>
-            <p class="text-muted">
-                As a software engineer, I possess a solid understanding of SDLC, databases, RTM, and various development methodologies. My skills span mobile app development, backend development with Node.js and Spring Boot, API design, database management, and CI/CD implementation.
+        </section>
+
+        <!--------------------------------- Skills ------------------------------->
+        <section class="skills section" id="skills">
+            <span class="section-subtitle">Why Choose Me</span>
+            <h2 class="section-title">My expertise Area</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">App Development</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Flutter</span>
+                        <span class="skills__number">100%</span>
+                        <span class="skills__bar skills__html"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Kotlin</span>
+                        <span class="skills__number">90%</span>
+                        <span class="skills__bar skills__js"></span>
+                    </div>
+
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Backend</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">NodeJs</span>
+                        <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__php"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Chatbot & AI</span>
+                        <span class="skills__number">30%</span>
+                        <span class="skills__bar skills__node"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Firebase</span>
+                        <span class="skills__number">100%</span>
+                        <span class="skills__bar skills__firebase"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!------------------------------- Services ------------------------------>
+        <section class="services section" id="services">
+            <span class="section-subtitle">What I Offer</span>
+            <h2 class="section-title">My Services</h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <i class="bx bx-code service__icon"></i>
+                    <h3 class="services__title">App Development</h3>
+                    <p class="services__description">I create seamless and responsive mobile apps for Android, iOS, and native platforms, ensuring top performance and user experience.</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-chat service__icon"></i>
+                    <h3 class="services__title">Chatbot Development</h3>
+                    <p class="services__description">I design and develop intelligent chatbots using AI models like Rasa, tailored to enhance user interaction and provide personalized support.</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-brush service__icon"></i>
+                    <h3 class="services__title">UI/UX</h3>
+                    <p class="services__description">I craft intuitive and engaging user interfaces, ensuring a smooth and enjoyable experience that aligns with your brand.</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-server service__icon"></i>
+                    <h3 class="services__title">Backend Development</h3>
+                    <p class="services__description">I build and deploy robust backend systems using Node.js and Spring Boot, focusing on performance, scalability, and secure API integration.</p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-pencil service__icon"></i>
+                    <h3 class="services__title">App Marketing</h3>
+                    <p class="services__description">I offer strategies and solutions to effectively market your app, increasing visibility, user engagement, and downloads across platforms.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!---------------------------------- Works --------------------------->
+        <section class="works section" id="works">
+            <span class="section-subtitle">My portfolio</span>
+            <h2 class="section-title">Recent Works</h2>
+
+            <div class="works__container bd-grid">
+
+
+                        <!-- Custom Chatbot -->
+            <div class="works__img">
+                <img src="images/cb.jpg" alt="Custom Chatbot" title="Custom Chatbot">
+                <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Custom Chatbot</span>
+                </div>
+            </div>
+
+            <!-- Islamic App -->
+            <div class="works__img">
+                <img src="images/ai.jpg" alt="Islamic App" title="Islamic App">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=app.tecqasr.aamal.islam.com.aamal_islam&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Islamic App</span>
+                </div>
+            </div>
+
+            <!-- Consultation App -->
+            <div class="works__img">
+                <img src="images/wc.jpg" alt="Consultation App" title="Consultation App">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=com.app.consultants&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Consultation App</span>
+                </div>
+            </div>
+
+            <!-- AppLocker -->
+            <div class="works__img">
+                <img src="images/al.jpg" alt="AppLocker" title="AppLocker">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=com.tecqasr.app_locker.app&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">AppLocker</span>
+                </div>
+            </div>
+
+            <!-- Book Store -->
+            <div class="works__img">
+                <img src="images/bs.jpg" alt="Book Store" title="Book Store">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=app.booker.com.tecqasr.booker&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Book Store</span>
+                </div>
+            </div>
+
+            <!-- Cricket Game -->
+            <div class="works__img">
+                <img src="images/cg.jpg" alt="Cricket Game" title="Cricket Game">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=app.handcricket.com&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Cricket Game</span>
+                </div>
+            </div>
+
+            <!-- Screen Casting App -->
+            <div class="works__img">
+                <img src="images/sc.jpg" alt="Screen Casting App" title="Screen Casting App">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=app.tecqasr.screencast.com&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Screen Casting App</span>
+                </div>
+            </div>
+
+            <!-- Audio Player App -->
+            <div class="works__img">
+                <img src="images/ap.jpg" alt="Audio Player App" title="Audio Player App">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=com.tecqasr.echoplay.app&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Audio Player App</span>
+                </div>
+            </div>
+
+            <!-- Recipes App -->
+            <div class="works__img">
+                <img src="images/ra.jpg" alt="Recipes App" title="Recipes App">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=app.lookncook.com&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Recipes App</span>
+                </div>
+            </div>
+
+            <!-- eCattle -->
+            <div class="works__img">
+                <img src="images/ca.jpg" alt="eCattle" title="eCattle">
+                <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">eCattle</span>
+                </div>
+            </div>
+
+            <!-- iKonnect -->
+            <div class="works__img">
+                <img src="images/ik.jpg" alt="iKonnect" title="iKonnect">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=com.boschpharma.ikonnect.cardiacare&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">iKonnect</span>
+                </div>
+            </div>
+
+            <!-- Distribution Portal -->
+            <div class="works__img">
+                <img src="images/dp.jpg" alt="Distributors Portal" title="Distributors Portal">
+                <div class="works__data">
+                <a href="https://play.google.com/store/apps/details?id=pk.com.informatica.onlinedistributor&pcampaignid=web_share" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Distributors Portal</span>
+                </div>
+            </div>
+
+            <!-- Blood Donation App -->
+            <div class="works__img">
+                <img src="images/bd.jpg" alt="Blood Donation App" title="Blood Donation App">
+                <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Blood Donation App</span>
+                </div>
+            </div>
+
+            <!-- Utility App -->
+            <div class="works__img">
+                <img src="images/up.jpg" alt="Utility App" title="Utility App">
+                <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Utility App</span>
+                </div>
+            </div>
+
+            <!-- Habit Tracker -->
+            <div class="works__img">
+                <img src="images/ht.jpg" alt="Habit Tracker" title="Habit Tracker">
+                <div class="works__data">
+                <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+                <span class="works__title">Habit Tracker</span>
+                </div>
+            </div>
+
+
+
+            </div>
+        </section>
+
+        <!----------------------------------- Contact ------------------------------>
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact__container bd-grid">
+                
+                <form id="contactForm" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" id="email" placeholder="Email" class="contact__input" required>
+                    </div>
+                
+                    <input type="text" id="project" placeholder="Project" class="contact__input" required>
+                    <textarea id="message" placeholder="Message" name="" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+                
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Prevent the default form submission
+                
+                        var name = document.getElementById('name').value;
+                        var email = document.getElementById('email').value;
+                        var project = document.getElementById('project').value;
+                        var message = document.getElementById('message').value;
+                
+                        var mailtoLink = 'mailto:example@gmail.com?subject=' + encodeURIComponent('Contact Form Submission') +
+                            '&body=' + encodeURIComponent('Name: ' + name + '\n') +
+                            encodeURIComponent('Email: ' + email + '\n') +
+                            encodeURIComponent('Project: ' + project + '\n\n') +
+                            encodeURIComponent('Message:\n' + message);
+                
+                        window.open(mailtoLink, '_blank'); // Open the mail client in a new tab
+                    });
+                </script>
+
+                <div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Call Me</h3>
+                        <span class="contact__text">+92 340 2093883</span>
+                        <span class="contact__text">+92 313 1237457</span>
+                    </div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                        <span class="contact__text">umeriftikhar2526@gmail.com</span>
+                    </div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact__text">Malir, Malir Halt</span>
+                        <span class="contact__text">Karachi, PK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!------------------------ Body ends from here ----------------------->
+
+    <!------------------------ Footer starts from here ----------------------->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Umer Iftikhar</h1>
+            <p class="footer-description">
+                Crafting innovative and user-friendly digital solutions to elevate your business.
             </p>
-            
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="images/flutter-umer-resume.pdf"
-                target="_blank"
-                download="flutter-dev-resume"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
+
+            <div class="footer__social">
+                <a href="https://web.facebook.com/umeriftikhar2526/" target="_blank" class="footer__link"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/_ummmer/" target="_blank" class="footer__link"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/umer-iftikhar-a3842122a/" target="_blank" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+            <p class="footer-copy">All rights reserved by Umer - 2024</p>
         </div>
-      </div>
-    </section>
-    <!-- skill section end here -->
-
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-      </div>
-      <div class="portfolio-body">
-
-        <div class="row justify-content-evenly px-4">
-
-          <!-- Chatbot -->
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/cb.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Chatbot</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">Bloc</span>
-                <span class="badge bg-secondary badge-pill">NodeJs</span>
-                <span class="badge bg-secondary badge-pill">ExpressJs</span>
-                <span class="badge bg-secondary badge-pill">OpenAI</span>
-                <span class="badge bg-secondary badge-pill mb-2">Rasa</span
-                ><br />
-                <a href="#" class="link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Quran App -->
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/ai.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Islamic App</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">Bloc</span>
-                <span class="badge bg-secondary badge-pill">NodeJs</span>
-                <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=app.tecqasr.aamal.islam.com.aamal_islam&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Health Care App -->
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/wc.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Consultation App</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">GetX</span>
-                <span class="badge bg-secondary badge-pill mb-2">Jitsi Meet</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=com.app.consultants&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="row justify-content-evenly mt-4 px-4">
-
-          <!-- AppLocker -->
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/al.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">AppLocker</h4>
-                <span class="badge bg-secondary badge-pill mb-2">Kotlin</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=com.tecqasr.app_locker.app&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- BookShop -->
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/bs.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Book Store</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">GetX</span>
-                <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=app.booker.com.tecqasr.booker&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Cricket Game -->
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/cg.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Cricket Game</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">GetX</span>
-                <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=app.handcricket.com&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-
-        <div class="row justify-content-evenly mt-4 px-4">
-
-          <!-- Screen Cast -->
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/sc.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Screen Casting App</h4>
-                <span class="badge bg-secondary badge-pill mb-2">Kotlin</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=app.tecqasr.screencast.com&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Audio Player -->
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/ap.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Audio Player App</h4>
-                <span class="badge bg-secondary badge-pill mb-2">Kotlin</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=com.tecqasr.echoplay.app&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Recipe App -->
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/ra.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Recipes App</h4>
-                <span class="badge bg-secondary badge-pill">Java</span>
-                <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                ><br />
-                <a href="https://play.google.com/store/apps/details?id=app.lookncook.com&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-
-        <div class="row justify-content-evenly mt-4 px-4">
-
-          <!-- eCattle -->
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/ca.jpg" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">eCattle</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">GetX</span>
-                <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                ><br />
-                <a href="#" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-    <!-- iKonnect -->
-    <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-      <div class="card">
-        <img src="images/ik.jpg" class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <h4 class="card-title">iKonnect</h4>
-          <span class="badge bg-secondary badge-pill">Flutter</span>
-          <span class="badge bg-secondary badge-pill">GetX</span>
-          <span class="badge bg-secondary badge-pill">Bloc</span>
-          <span class="badge bg-secondary badge-pill mb-2">Event management</span
-          ><br />
-          <a href="https://play.google.com/store/apps/details?id=com.boschpharma.ikonnect.cardiacare&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Distribution Portal -->
-    <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-      <div class="card">
-        <img src="images/dp.jpg" class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <h4 class="card-title">Distributors Portal</h4>
-          <span class="badge bg-secondary badge-pill">Flutter</span>
-          <span class="badge bg-secondary badge-pill">Provider</span>
-          <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-          ><br />
-          <a href="https://play.google.com/store/apps/details?id=pk.com.informatica.onlinedistributor&pcampaignid=web_share" target="_blank" class="read-more-btn link">View</a>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-        </div>
-
-
-        <div class="row justify-content-evenly mt-4 px-4">
-
-      
-
-                    <!-- Blood Donation App -->
-                    <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                      <div class="card">
-                        <img src="images/bd.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body text-center">
-                          <h4 class="card-title">Blood Donation App</h4>
-                          <span class="badge bg-secondary badge-pill">Java</span>
-                          <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                          ><br />
-                          <a href="#" class="read-more-btn link">View</a>
-                        </div>
-                      </div>
-                    </div>
-          
-          
-                    <!-- Utility App -->
-                    <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                      <div class="card">
-                        <img
-                          src="images/up.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body text-center">
-                          <h4 class="card-title">Utility App</h4>
-                          <span class="badge bg-secondary badge-pill">Java</span>
-                          <span class="badge bg-secondary badge-pill mb-2">nGram</span
-                          ><br />
-                          <a href="#" class="read-more-btn link">View</a>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-          <!-- Habbit Tracker App -->
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/ht.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Habbit Tracker</h4>
-                <span class="badge bg-secondary badge-pill">Flutter</span>
-                <span class="badge bg-secondary badge-pill">Riverpord</span>
-                <span class="badge bg-secondary badge-pill mb-2">Firebase</span
-                ><br />
-                <a href="#" class="read-more-btn link">View</a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-
-
-
-      </div>
-    </section>
-    <!-- portfolio section ends here -->
-
-
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Malir Halt, Karachi, Pakistan</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+92 3402093883</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>umeriftikhar2526@gmail.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact section ends here -->
-
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
-
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#home">Home</a>
-        <div class="vr"></div>
-        <a href="#about">About</a>
-        <div class="vr"></div>
-        <a href="#service">Expertise</a>
-        <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
-        <div class="vr"></div>
-        <a href="#contact">Contact</a>
-      </div>
-
-
-      <div class="social-links mt-5" data-aos="fade-up">
-        <button onclick="window.open('https://www.linkedin.com/in/umer-iftikhar-a3842122a/', '_blank')" class="rounded-pill linkedin">
-            <i class="bi bi-linkedin"></i>
-        </button>
-    
-        <button onclick="window.open('https://web.facebook.com/umeriftikhar2526/', '_blank')" class="rounded-pill facebook">
-            <i class="bi bi-facebook"></i>
-        </button>
-    
-        <button onclick="window.open('https://www.instagram.com/_ummmer/', '_blank')" class="rounded-pill instagram">
-            <i class="bi bi-instagram"></i>
-        </button>
-    </div>
-    
-
-      <hr class="text-muted my-4" />
-
-      <p>Copyright umeriftikhar 2024-2050 Portfolio | All Rights Reserved.</p>
     </footer>
-    <!-- footer section ends here -->
+    <!------------------------ Footer ends from here ----------------------->
 
-      <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-        duration: 1000,
-        offset: 50,
-      });
-    </script>
-    <!-- custom js file linking -->
+    <!------------------------- Javascript file ---------------------------->
     <script src="script.js"></script>
-    
-  </body>
+</body>
 </html>
